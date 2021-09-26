@@ -1,0 +1,60 @@
+body{
+  margin:0;
+  text-align: center;
+}
+.main-class{
+  background: green;
+  margin: 2% 20%;
+  font-family: sans-serif;
+}
+.heading{
+  margin: 2rem;
+  padding: 2rem 2rem 0;
+  font-family: sans-serif;
+  color: #fff;
+}
+#intial-price,#qantity-stock,#current-price{
+  width: 80%;
+  height: 2rem;
+  outline: none;
+  font-weight: 300;
+  margin: 0 1rem 1rem;
+  font-family: cursive;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.initial-lebel,.quantity-lebel,.current-lebel{
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #FFC069;
+}
+#output{
+  color: #CEE5D0;
+  font-size: 2rem;
+  height: 15vh;
+  padding-bottom: 1rem;
+}
+#tell-me-btn{
+  background-color:#3D087B;
+  border: none;
+  color: #FFC069;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  font-size: large;
+  cursor: pointer;
+  outline: #fff;
+  margin: auto;
+  display: block;
+}
+.links{
+  margin: 1% 1% 0;
+}
+.copywrite{
+  padding: 0 0 1rem;
+}
+img{
+  display: inline;
+  width: 1rem;
+  height:1%;
+}
