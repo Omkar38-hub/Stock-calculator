@@ -9,12 +9,12 @@ function calculateProfitLoss(ip, qs, cp) { // intialPrice, quantity of stocks, c
   if (ip && qs && cp) {
     if (ip > cp) {
       var loss = (ip - cp) * qs;
-      var lossPercent = (loss / ip) * 100;
+      var lossPercent = (loss / (ip*qs)) * 100;
       outputTxt.innerText = "Hey, the loss is ₹" + loss + " and the loss percent is " + lossPercent.toFixed(2) + "%";
       outputTxt.style.color = 'red';
     } else if (cp > ip) {
       var profit = (cp - ip) * qs;
-      var profitPercent = (profit / ip) * 100;
+      var profitPercent = (profit / (ip*qs)) * 100;
       outputTxt.innerText = "Hey, the profit is ₹" + profit + " and the profit percent is " + profitPercent.toFixed(2) + "%";
       outputTxt.style.color = 'yellow';
     } else {
