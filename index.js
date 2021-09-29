@@ -7,6 +7,7 @@ const outputTxt = document.querySelector("#output");
 
 function calculateProfitLoss(ip, qs, cp) { // intialPrice, quantity of stocks, current Price
   if (ip && qs && cp) {
+    if(ip>0 && qs>0 && cp>0){
     if (ip > cp) {
       var loss = (ip - cp) * qs;
       var lossPercent = (loss / (ip*qs)) * 100;
@@ -20,7 +21,10 @@ function calculateProfitLoss(ip, qs, cp) { // intialPrice, quantity of stocks, c
     } else {
       outputTxt.innerText = "No pain no gain and no gain no pain!";
     }
-  } else {
+  }else
+    outputTxt.innerText = "Please enter valid inputs!!";
+}
+   else {
     outputTxt.innerText = "All fields are required!!";
   }
 }
